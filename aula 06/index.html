@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    
+
+<h2>Responsive Page</h2>
+
+<h2>Responsive Image</h2>
+<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+
+<img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" style="max-width:100%;">
+
+<h2>Responsive Image</h2>
+<p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+<p>Resize the browser window to see the effect.</p>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAMWde6OBJPo8xsyjX6g0HoNv_V3jmwObQ2cMNOam4Ww&s" style="max-width:100%;height:auto;">
+
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+<picture>
+  <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAMWde6OBJPo8xsyjX6g0HoNv_V3jmwObQ2cMNOam4Ww&s" media="(max-width: 400px)">
+  <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlrZqTCInyg6RfYC7Ape20o-EWP1EN_A8fOA&" media="(max-width: 1000px)">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlrZqTCInyg6RfYC7Ape20o-EWP1EN_A8fOA&s" alt="Dog" style="width: 30%;">
+</picture>
+
 </body>
 </html>
+
